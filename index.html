@@ -207,7 +207,9 @@
       <p><span class="contact-label">LinkedIn</span> www.linkedin.com/in/dharmika-golla-044853341</p>
       <p><span class="contact-label">GitHub</span> https://github.com/dharmika06</p>
     </div>
-    <form class="contact-form" id="contactForm">
+    <form class="contact-form" 
+      action="https://formspree.io/f/xrewkbol">
+      method="POST">
       <div class="form-row">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
@@ -221,7 +223,6 @@
         <textarea id="message" name="message" rows="4" required></textarea>
       </div>
       <button type="submit" class="form-submit">Send message</button>
-      <p class="form-note">Note: this form doesn't send anywhere yet — connect it to a service like Formspree, or set the form action to mailto once your email is added.</p>
     </form>
   </div>
 </section>
