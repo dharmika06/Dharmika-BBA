@@ -32,7 +32,7 @@ jobs:
           cache-dependency-path: reference-portfolio/Portfolio_series-main/package-lock.json
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
         working-directory: reference-portfolio/Portfolio_series-main
 
       - name: Build portfolio
@@ -43,7 +43,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Upload site
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v1
         with:
           path: reference-portfolio/Portfolio_series-main/dist
 
