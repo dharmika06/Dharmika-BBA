@@ -9,7 +9,7 @@ export default function TopPicks() {
   const rail = useRef<HTMLDivElement>(null);
   return (
     <>
-      <SectionHeading kicker="Top 10 · from the resume" title="Sushmita's Top Picks" />
+      <SectionHeading kicker="Top 10 · from the resume" title="Dharmika's Top Picks" />
       <div className="group/rail relative">
         <div ref={rail} className="rail gutter flex snap-x snap-mandatory gap-2 overflow-x-auto py-6">
           {topPicks.map((pick, i) => (
@@ -30,7 +30,7 @@ export default function TopPicks() {
               </span>
               <div className="relative z-10 h-[85%] w-[150px] overflow-hidden rounded-lg shadow-[-12px_0_30px_rgba(0,0,0,0.7)] ring-1 ring-white/10 transition duration-500 group-hover:-translate-y-2 group-hover:ring-white/30 sm:w-[180px]">
                 <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-110">
-                  <PosterBackdrop palette={pick.palette} />
+                  <PosterBackdrop palette={pick.palette as unknown as import('../data/portfolio').Palette} />
                 </div>
                 <div className="absolute inset-0 flex flex-col justify-between p-3.5">
                   <span className="text-[9px] font-bold uppercase tracking-[0.26em] text-bone/70">{pick.label}</span>

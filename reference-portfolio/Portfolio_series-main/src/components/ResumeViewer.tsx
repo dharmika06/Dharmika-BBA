@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { achievements, certifications, education, experience, profile, projects, skillCategories } from '../data/portfolio';
+import { hackathons, certifications, education, experience, profile, projects, skillCategories } from '../data/portfolio';
 import { EASE, Magnetic, SectionHeading } from './fx';
 
 /** THE FULL STORY — a designed resume preview plus view / download actions. */
@@ -38,7 +38,7 @@ export default function ResumeSection({ onView }: { onView: () => void }) {
             <Magnetic className="w-full">
               <a
                 href={profile.resumePdf}
-                download="Sushmita_Dasari_Resume.pdf"
+                download="resume.pdf"
                 data-cursor="link"
                 className="glass flex min-h-12 w-full items-center justify-center gap-2 rounded-md px-6 text-[15px] font-semibold text-bone transition hover:bg-white/15"
               >
@@ -48,7 +48,9 @@ export default function ResumeSection({ onView }: { onView: () => void }) {
           </div>
           <dl className="mt-8 grid grid-cols-3 gap-px overflow-hidden rounded-xl bg-white/10 text-center">
             {[
-              { v: education[0].score.replace('CGPA ', ''), k: 'CGPA' },
+              { v: 'BBA', k: 'Degree' },
+              { v: String(education.length), k: 'Schools' },
+              { v: String(experience.length), k: 'Jobs' },     
               { v: String(projects.length), k: 'Originals' },
               { v: String(certifications.length), k: 'Certs' },
             ].map((s) => (
@@ -114,15 +116,15 @@ export function ResumeSheet() {
         <div>
           <H>Education</H>
           {education.map((e) => (
-            <div key={e.school} className="mb-4">
-              <div className="flex flex-wrap justify-between gap-x-3">
-                <p className="text-sm font-semibold text-bone">
-                  {e.school}, {e.place}
-                </p>
+            <div key={e.degree} className="mb-4">
+           <div className="flex flex-wrap justify-between gap-x-3">
+          <p className="text-sm font-semibold text-bone">
+        {('College' in e ? e.College : 'Institution' in e ? e.Institution : e.School)}, {e.place}
+                  </p>
                 <p className="text-xs text-smoke">{e.period}</p>
               </div>
               <p className="text-xs text-mist">
-                {e.degree} · <span className="text-bone/80">{e.score}</span>
+                {e.degree} · <span className="text-bone/80">{e.degree}</span>
               </p>
             </div>
           ))}
@@ -172,7 +174,7 @@ export function ResumeSheet() {
 
           <H>Achievements</H>
           <ul className="space-y-2">
-            {achievements.map((a) => (
+            {hackathons.map((a) => (
               <li key={a.id} className="text-xs leading-relaxed text-mist">
                 <span className="font-semibold text-bone">
                   {a.title} — {a.org}.

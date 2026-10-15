@@ -1,5 +1,5 @@
 /**
- * Central portfolio data — generated from Dharmika's resume (Dharmika BBA full resume.pdf).
+ * Central portfolio data — generated from Dharmika's resume (Dharmika BBA Full Resume.pdf).
  * Every fact on the site comes from this file. Update it here and the whole site follows.
  * Nothing here should be added unless it appears on the resume.
  */
@@ -13,22 +13,21 @@ export const profile = {
   seriesTag: 'MY JOURNEY',
   /** Fictional studio card shown at the very start of the opening sequence. */
   originalLabel: 'A DHARMIKA ORIGINAL',
-  role: 'Business Analyst',
-  tagline: ['Business Analyst', 'Business Operations', 'Project Management', 'Marketing & Sales'],
+  role: 'BBA Student | Business Analyst | Finance Analyst | Banking | Business Operations | Project Management | Marketing & Sales',
+  tagline: ['Business Analyst', 'Finance Analyst', 'Banking', 'Business Operations', 'Project Management', 'Marketing & Sales'],
   intro:
-    'A BBA student Business Analyst focused on data-driven decision-making, business process improvement, and operational efficiency. Skilled in Excel, Power BI, and business reporting, with an interest in turning data into actionable business insights.', 
+    'A Bachelor of Business Administration (BBA) student with a foundation in finance, human resources, marketing, and business operations. Skilled in Microsoft Excel, Power BI, Tally, SAP, and Generative AI, with knowledge of data analysis, business reporting, and digital marketing. Interested in applying analytical thinking and problem-solving skills to support business decisions, improve processes, and create practical business insights.', 
   location: 'Machilipatnam, Andhra Pradesh',
   email: 'dharmikagolla64@gmail.com',
   links: {
     linkedin: 'https://www.linkedin.com/in/dharmikagolla',
     github: 'https://github.com/dharmika06',
   },
-  resumePdf: '',
+  resumePdf: '/assets/resume.pdf',
   portrait: {
-    src: '/assets/portrait-720.webp',
-    srcSet: '/assets/portrait-420.webp 420w, /assets/portrait-720.webp 720w, /assets/portrait-1100.webp 1100w',
-    alt: 'Portait of Dharmika Golla',
-  },
+  src: '/assets/profile.png',
+  alt: 'Portrait of Dharmika Golla',
+},
   interests: ['Business & Management', 'Finance & Banking', 'Exploring Digital TOOLs', 'Learning New Skills'],
 };
 
@@ -194,21 +193,21 @@ export const hackathons: Hackathons[] = [
   {
     id: 'advanced-digital-marketing',
     title: 'Advanced Digital Marketing Hackathon',
-    org: 'Actual event organizer',
+    org: 'Adhock',
     detail: 'Participated in digital marketing activities focused on social media promotion, content creation, and online campaign planning.',
     laurel: 'Digital Marketing',
   },
   {
     id: 'web-development',
     title: 'Web Development Hackathon',
-    org: 'Actual event organizer',
+    org: 'Adhock',
     detail: 'Collaborated on designing and developing a responsive webpage within a limited timeframe, applying frontend development and problem-solving skills.',
     laurel: 'Web Development',
   },
   {
-    id: 'seo-startup-project',
+    id: 'SEO Hackathon',
     title: 'SEO & Startup Website Project',
-    org: 'Actual college or event organizer',
+    org: 'Adhock',
     detail: 'Created a Google Sites website for the fictional startup concept "Cheers & Chills" and presented the website, PowerPoint presentation, and promotional poster as part of an SEO activity.',
     laurel: 'SEO & Digital Strategy',
   },
@@ -263,82 +262,52 @@ export type SkillCategory = { id: string; title: string; subtitle: string; skill
 
 export const skillCategories: SkillCategory[] = [
   {
-    id: 'languages',
-    title: 'Languages',
-    subtitle: 'Java is the primary language',
+    id: 'business-analytics',
+    title: 'Business & Analytics',
+    subtitle: 'Data analysis and reporting',
     skills: [
-      { name: 'Java', mono: 'Jv', note: 'Primary' },
-      { name: 'Python', mono: 'Py' },
-      { name: 'C', mono: 'C' },
-      { name: 'C++', mono: 'C+' },
+      { name: 'Advanced Excel', mono: 'XL' },
+      { name: 'Power BI', mono: 'BI' },
+      { name: 'Data Analysis', mono: 'DA' },
+      { name: 'Dashboard Creation', mono: 'DB' },
+      { name: 'KPI Reporting', mono: 'KPI' },
     ],
   },
   {
-    id: 'frontend',
-    title: 'Frontend',
-    subtitle: 'Interfaces & the web platform',
+    id: 'management',
+    title: 'Business & Management',
+    subtitle: 'Core business knowledge',
     skills: [
-      { name: 'React', mono: 'Re' },
-      { name: 'HTML', mono: 'Ht' },
-      { name: 'CSS', mono: 'Cs' },
-      { name: 'JavaScript', mono: 'Js' },
+      { name: 'Business Administration', mono: 'BA' },
+      { name: 'Financial Management', mono: 'FM' },
+      { name: 'HR Fundamentals', mono: 'HR' },
+      { name: 'Marketing', mono: 'MK' },
+      { name: 'Communication', mono: 'CM' },
     ],
   },
   {
-    id: 'backend',
-    title: 'Backend',
-    subtitle: 'Server-side logic',
+    id: 'tools',
+    title: 'Tools & Technology',
+    subtitle: 'Business tools and digital skills',
     skills: [
-      { name: 'Node.js', mono: 'No' },
-      { name: 'Express.js', mono: 'Ex' },
+      { name: 'Tally ERP', mono: 'TA' },
+      { name: 'SAP', mono: 'SAP' },
+      { name: 'Generative AI', mono: 'AI' },
+      { name: 'Prompt Engineering', mono: 'PE' },
+      { name: 'Python (Basic)', mono: 'PY' },
+      { name: 'API Fundamentals', mono: 'API' },
     ],
   },
   {
-    id: 'infra',
-    title: 'Infra & Tools',
-    subtitle: 'Shipping & architecture',
+    id: 'digital',
+    title: 'Digital Skills',
+    subtitle: 'Digital marketing and web basics',
     skills: [
-      { name: 'Docker', mono: 'Dk' },
-      { name: 'Docker Compose', mono: 'Dc' },
-      { name: 'REST APIs', mono: 'Ap' },
-      { name: 'Microservices', mono: 'Ms' },
-      { name: 'JWT Auth', mono: 'Jw' },
-      { name: 'Git / GitHub', mono: 'Gt' },
-      { name: 'Postman', mono: 'Pm' },
-    ],
-  },
-  {
-    id: 'databases',
-    title: 'Databases',
-    subtitle: 'Indexing • Normalization',
-    skills: [
-      { name: 'PostgreSQL', mono: 'Pg' },
-      { name: 'MongoDB', mono: 'Mg' },
-      { name: 'MySQL', mono: 'My' },
-    ],
-  },
-  {
-    id: 'fundamentals',
-    title: 'CS Fundamentals',
-    subtitle: 'The foundations',
-    skills: [
-      { name: 'DSA', mono: 'Ds' },
-      { name: 'OS', mono: 'Os' },
-      { name: 'CN', mono: 'Cn' },
-      { name: 'DBMS', mono: 'Db' },
-      { name: 'OOPs', mono: 'Oo' },
-      { name: 'Collections', mono: 'Co' },
-      { name: 'Multithreading', mono: 'Mt' },
-    ],
-  },
-  {
-    id: 'interests',
-    title: 'Interests',
-    subtitle: 'Coming soon to the series',
-    skills: [
-      { name: 'System Design', mono: 'Sd' },
-      { name: 'Cloud Computing (AWS)', mono: 'Aw' },
-      { name: 'Machine Learning', mono: 'Ml' },
+      { name: 'SEO Fundamentals', mono: 'SEO' },
+      { name: 'Digital Marketing', mono: 'DM' },
+      { name: 'Google Search Console', mono: 'GSC' },
+      { name: 'HTML', mono: 'HT' },
+      { name: 'Web Design', mono: 'WD' },
     ],
   },
 ];
@@ -348,27 +317,18 @@ export const skillCategories: SkillCategory[] = [
  * where the skill appears in the projects, certifications or hackathons on the resume.
  */
 export const skillEvidence: Record<string, string[]> = {
-  Java: ['Oracle Java Certified Foundations Associate', 'HackerRank 5-star'],
-  Python: ['PolicyGuard AI', 'Cisco Python Essentials 1', 'HackerRank 5-star'],
-  C: ['HackerRank 5-star'],
-  React: ['Payment Gateway System', 'Multi-Tenant SaaS Platform'],
-  HTML: ['Pearson IT Specialist – HTML and CSS', 'Cisco HTML Essentials'],
-  CSS: ['Pearson IT Specialist – HTML and CSS', 'Cisco CSS Essentials'],
-  JavaScript: ['Cisco JavaScript Essentials 1 & 2'],
-  'Node.js': ['Payment Gateway System', 'Multi-Tenant SaaS Platform'],
-  'Express.js': ['Payment Gateway System'],
-  Docker: ['Payment Gateway System'],
-  'Docker Compose': ['Multi-Tenant SaaS Platform'],
-  'REST APIs': ['PolicyGuard AI'],
-  Microservices: ['Payment Gateway System'],
-  'JWT Auth': ['Multi-Tenant SaaS Platform'],
-  'Git / GitHub': ['GitHub Foundations'],
-  PostgreSQL: ['Payment Gateway System', 'Multi-Tenant SaaS Platform'],
-  MongoDB: ['MongoDB Certified Associate Developer'],
-  DBMS: ['NPTEL Database Management System', 'Oracle Database Foundations'],
-  DSA: ['AlgoUniversity Tech Fellow', '850+ problems solved'],
-  'Cloud Computing (AWS)': ['AWS Certified AI Practitioner', 'AWS Academy Cloud Foundations'],
-  'Machine Learning': ['B.Tech AI & ML', 'NPTEL Deep Learning'],
+  'Microsoft Excel': ['Employee Payroll & Attendance Tracker'],
+  'Power BI': ['Business data visualization and reporting'],
+  'Tally ERP': ['Accounting and financial records'],
+  SAP: ['SAP training'],
+  'Generative AI': ['Generative AI Virtual Internship'],
+  'Prompt Engineering': ['Generative AI Virtual Internship'],
+  Python: ['Python fundamentals'],
+  'API Fundamentals': ['Generative AI Virtual Internship'],
+  SEO: ['SEO & Startup Website Project'],
+  'Digital Marketing': ['Advanced Digital Marketing Hackathon'],
+  HTML: ['Web Development Hackathon'],
+  CSS: ['Web Development Hackathon'],
 };
 
 export type Episode = {
@@ -399,13 +359,13 @@ export const seasons: Season[] = [
     number: 1,
     title: 'The Beginning',
     period: '2021 – 2023',
-    synopsis: 'Intermediate years at Sri Chaitanya Junior College, Kakinada — Mathematics, Physics and Chemistry.',
+    synopsis: 'Intermediate years at Nobel College, Machilipatnam — Civics, Economics and Commerce.',
     episodes: [
       {
         code: 'S01 E01',
         title: 'The Foundation',
-        description: 'BIEAP, MPC at Sri Chaitanya Junior College, Kakinada — finishing with a score of 925/1000.',
-        tags: ['MPC', 'BIEAP'],
+        description: 'BIEAP, CEC at Nobel College, Machilipatnam.',
+        tags: ['CEC', 'BIEAP'],
         runtime: 'Jun 2021 – May 2023',
         palette: amber,
       },
@@ -413,123 +373,123 @@ export const seasons: Season[] = [
   },
   {
     number: 2,
-    title: 'Enter: AI & ML',
-    period: '2023 – Present',
-    synopsis: 'B.Tech in Artificial Intelligence and Machine Learning at Aditya Engineering College, Surampalem.',
+    title: 'My Journey',
+    period: '2024-2027',
+    synopsis: 'Bachelor of Business Administration at Aditya Degree College, Machilipatnam.',
     episodes: [
       {
         code: 'S02 E01',
-        title: 'The Engineer',
-        description: 'Bachelor of Technology in Artificial Intelligence and Machine Learning — CGPA 9.10.',
-        tags: ['B.Tech', 'AI & ML', 'CGPA 9.10'],
-        runtime: 'Oct 2023 – Present',
+        title: 'CMA Foundation',
+        description: 'CMA Foundation, INSTITUTE OF COST ACCOUNTANTS OF INDIA.',
+        tags: ['CMA', 'Completed', 'ICMAI'],
+        runtime: '2023-2024',
         palette: violet,
       },
       {
         code: 'S02 E02',
-        title: 'The Topper',
-        description: 'AIML Branch Topper with a 9.24 SGPA for the semester.',
-        tags: ['9.24 SGPA', 'Branch Topper'],
-        runtime: 'One semester',
+        title: 'The BBA Student',
+        description: 'Bachelor of Business Administration student at Aditya Degree College, Machilipatnam.',
+        tags: ['bba', 'aditya degree college', 'machilipatnam'],
+        runtime: '2024 – 2027',
         palette: crimson,
       },
-      {
-        code: 'S02 E03',
-        title: 'The Problem Solver',
-        description: 'LeetCode 350+ (peak 1442), GFG 300+ (1436), CodeChef 200+ and HackerRank 5-star badges in C, Python, Java and SQL.',
-        tags: ['DSA', 'LeetCode', 'GFG', 'CodeChef', 'HackerRank'],
-        runtime: '850+ problems',
-        palette: jade,
-      },
+  {
+  code: 'S02 E03',
+  title: 'The Community Researcher',
+  description: 'Studied marketing strategies at malls and showrooms as part of a Community Service Project, exploring customer engagement and promotional techniques.',
+  tags: ['Market Research', 'Marketing Strategy', 'Customer Engagement'],
+  runtime: 'Community Service Project',
+  palette: jade,
+},
     ],
   },
   {
-    number: 3,
-    title: 'Learning to Build',
-    period: '2025 – 2026',
-    synopsis: 'One year of intensive Full-Stack Development training as a Trainee at Technical Hub Pvt Ltd.',
-    episodes: [
-      {
-        code: 'S03 E01',
-        title: 'The Trainee',
-        description: 'Intensive Full-Stack Development training covering frontend, backend, database integration and deployment workflows.',
-        tags: ['FSD', 'Frontend', 'Backend', 'Databases'],
-        runtime: 'May 2025 – Jun 2026',
-        palette: ocean,
-      },
-      {
-        code: 'S03 E02',
-        title: 'The Developer',
-        description: 'Developed responsive web applications — user interfaces, server-side logic and database connectivity.',
-        tags: ['React', 'Node.js', 'Express.js'],
-        runtime: 'Technical Hub',
-        palette: violet,
-      },
-      {
-        code: 'S03 E03',
-        title: 'The Deployer',
-        description: 'Deployed and managed web applications with version control, debugging and end-to-end development practices.',
-        tags: ['Git / GitHub', 'Deployment'],
-        runtime: 'Technical Hub',
-        palette: jade,
-      },
-    ],
-  },
-  {
-    number: 4,
-    title: 'Building Real Products',
-    period: '2026',
-    synopsis: 'Three Originals — an AI platform, a payment gateway and a multi-tenant SaaS — plus national-level recognition.',
-    episodes: [
-      {
-        code: 'S04 E01',
-        title: 'The AI Builder',
-        description: 'PolicyGuard AI — LLM-based Q&A and key-information extraction across 500+ policy documents at 92% accuracy.',
-        tags: ['Python', 'NLP', 'LLM'],
-        runtime: '2026',
-        palette: crimson,
-      },
-      {
-        code: 'S04 E02',
-        title: 'The Architect',
-        description: 'Payment Gateway System and Multi-Tenant SaaS Platform — state machines, microservices, tenant isolation and RBAC.',
-        tags: ['Node.js', 'PostgreSQL', 'Docker'],
-        runtime: '2026',
-        palette: amber,
-      },
-      {
-        code: 'S04 E03',
-        title: 'The Fellow',
-        description: 'Selected as a Tech Fellow at AlgoUniversity and reached the Semi-Finals of Flipkart GRiD 7.0.',
-        tags: ['AlgoUniversity', 'Flipkart GRiD 7.0'],
-        runtime: 'National stage',
-        palette: ocean,
-      },
-    ],
-  },
-  {
-    number: 5,
-    title: "What's Next",
-    period: 'Now streaming',
-    synopsis: 'The interests on the resume point to the next arc of the story.',
-    episodes: [
-      {
-        code: 'S05 E01',
-        title: 'The Next Chapter',
-        description: 'Exploring new skills, Aptitude, Consistency.',
-        runtime: 'In progress',
-        tags: ['Aptitude', 'Consistency', 'New Skills', 'Learning', 'Exploring'],
-        palette: violet,
-      },
-    ],
-  },
+  number: 3,
+   title: 'The Skill Builder',
+   synopsis: 'Building practical business skills.',
+   period: '2024–2026',      
+   
+  episodes: [
+    {
+      code: 'S03 E01',
+      title: 'The Excel Analyst',
+      description: 'Building practical data analysis skills using Advanced Excel, formulas, pivot tables, charts and dashboards.',
+      tags: ['Advanced Excel', 'Data Analysis', 'Pivot Tables'],
+      runtime: '2024–2026',
+      palette: ocean,
+    },
+    {
+      code: 'S03 E02',
+      title: 'The Dashboard Creator',
+      description: 'Learning to transform business data into meaningful reports and interactive dashboards using Power BI.',
+      tags: ['Power BI', 'Data Visualization', 'KPI Dashboards'],
+      runtime: '2025–2026',
+      palette: violet,
+    },
+    {
+      code: 'S03 E03',
+      title: 'The Business Professional',
+      description: 'Developing business and accounting skills through Tally, SAP, Generative AI and practical business projects.',
+      tags: ['Tally', 'SAP', 'Generative AI', 'Business Analysis'],
+      runtime: '2025–2026',
+      palette: jade,
+    },
+  ],
+},
+{
+  number: 4,
+  title: 'Building Real Projects',
+  period: '2026',
+  synopsis: 'Applying business knowledge and technical skills to practical projects.',
+  episodes: [
+    {
+      code: 'S04 E01',
+      title: 'The Payroll Tracker',
+      description: 'An Excel-based employee payroll and attendance tracker for organizing employee records and calculations.',
+      tags: ['Excel', 'Payroll', 'HR Analytics'],
+      runtime: '2026',
+      palette: crimson,
+    },
+    {
+      code: 'S04 E02',
+      title: 'The FinTech Researcher',
+      description: 'Researching the impact of FinTech lending startups on traditional bank credit disbursement to MSMEs.',
+      tags: ['FinTech', 'Banking', 'MSMEs', 'Market Research'],
+      runtime: '2026',
+      palette: amber,
+    },
+    {
+      code: 'S04 E03',
+      title: 'The Business Analyst',
+      description: 'Exploring business analysis, requirements, process improvement and data-driven decision-making.',
+      tags: ['Business Analysis', 'Problem Solving', 'Data Analysis'],
+      runtime: '2026',
+      palette: ocean,
+    },
+  ],
+},
+{
+  number: 5,
+  title: "What's Next",
+  period: '2026–2027',
+  synopsis: 'Preparing for graduation, placements and a career with strong growth opportunities.',
+  episodes: [
+    {
+      code: 'S05 E01',
+      title: 'The Placement Journey',
+      description: 'Preparing for aptitude tests, interviews, communication rounds and campus recruitment.',
+      tags: ['Aptitude', 'Interview Preparation', 'Communication'],
+      runtime: 'In progress',
+      palette: violet,
+    },
+  ],
+},
 ];
 
 
 
 /** Slides for the "▶ Play Intro" cinematic sequence. */
 export type IntroSlide = { kicker: string; title: string; lines: string[]; chips?: string[] };
-
 export const introSlides: IntroSlide[] = [
   {
     kicker: 'Education',
@@ -610,3 +570,38 @@ export const sectionMeta: Record<SectionId, { nav: string; card: string; meta: s
   story: { nav: 'Resume', card: 'The Full Story', meta: 'Resume • View & download', palette: violet },
 
 };
+
+
+
+export const topPicks: { label: string; title: string; detail: string; palette: string }[] = [
+  {
+    label: 'ANALYTICS',
+    title: 'Power BI Dashboard',
+    detail: 'Turning business data into useful insights.',
+    palette: 'jade',
+  },
+  {
+    label: 'FINANCE',
+    title: 'Financial Management',
+    detail: 'Understanding financial planning and analysis.',
+    palette: 'violet',
+  },
+  {
+    label: 'BUSINESS',
+    title: 'Business Analysis',
+    detail: 'Improving processes through data-driven decisions.',
+    palette: 'ocean',
+  },
+  {
+    label: 'PROJECT',
+    title: 'HR Payroll & Attendance Tracker',
+    detail: 'Managing employee payroll and attendance using Excel.',
+    palette: 'crimson',
+  },
+  {
+    label: 'DIGITAL',
+    title: 'SEO & Website Hackathons',
+    detail: 'Building a startup website and learning SEO.',
+    palette: 'jade',
+  },
+];
