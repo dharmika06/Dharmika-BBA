@@ -33,9 +33,11 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+        working-directory: reference-portfolio/Portfolio_series-main
 
       - name: Build portfolio
         run: npm run build
+        working-directory: reference-portfolio/Portfolio_series-main
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -43,7 +45,7 @@ jobs:
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./dist
+          path: reference-portfolio/Portfolio_series-main/dist
 
       - name: Deploy site
         id: deployment
