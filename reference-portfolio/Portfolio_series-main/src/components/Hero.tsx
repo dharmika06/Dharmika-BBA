@@ -37,7 +37,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
   const glowX = useTransform(px, [-1, 1], ['-6%', '6%']);
 
   const meta = [
-    education[0].period.split(' – ')[0].split(' ')[1] + '2024 – 2027',
+    '2024 – 2027',
     'Bachelour of Business Administration',
     `${projects.length} Originals`,
     `${certifications.length} Certifications`,
@@ -124,9 +124,8 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
           <span className="shimmer-text">{profile.firstName}</span>
         </motion.h1>
         <motion.p variants={item} className="mt-1 font-sans text-sm font-bold tracking-[0.62em] text-crimson-2 sm:text-base">
-          {profile.seriesTag}
+          {profile.seriesTag??''}
         </motion.p>
-
         <motion.div variants={item} className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 text-[13px] font-medium text-mist">
           {meta.map((m, i) => (
             <span key={m} className="flex items-center gap-3">
