@@ -25,7 +25,7 @@ export const profile = {
   },
   resumePdf: '/assets/resume.pdf',
   portrait: {
-  src: '/assets/profile.png',
+  src: '/Dharmika-BBA/assets/profile.png',
   alt: 'Portrait of Dharmika Golla',
 },
   interests: ['Business & Management', 'Finance & Banking', 'Exploring Digital TOOLs', 'Learning New Skills'],
